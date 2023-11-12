@@ -121,7 +121,7 @@ And as it's classification task we will be using these following metrics that em
 And the best model is the model which has a high percentage  of (precision and recall) for both categories.
 
 2. **Confuestion matrix**
-    - The false positive and false negative rates to be minimized as possible.
+    - The false positive and false negative rates must be minimized as possible.
 
 **Conclusion : after comparison between these multiple models performance results**
 
@@ -131,7 +131,7 @@ And the best model is the model which has a high percentage  of (precision and r
   
 - Also, we can go further and try to tune these model hyperparameters that will lead us to identify the best learning rate and batch size that will help to get out the local optima.
 
-  **This a screenshot of the performance results of the final solution - The first classifier version with Adadelta optimizer and 2800 epochs**
+  **This a screenshot of the performance results of the final solution - The first classifier version with Adadelta optimizer after 2800 epochs**
 
   
   ![class_rept](https://github.com/hayasalman/Artificial-Neural-Network-ANN/assets/71796909/c74ef280-a7c4-46c9-933f-e017797e7b8a)
@@ -142,7 +142,7 @@ And the best model is the model which has a high percentage  of (precision and r
    toward those customers as they are the most likely to churn, and the fact the bank has this information, in which a complaint is a vital factor to retain the customers or not , it's advisable 
    to develop a strategic plan to minimize the loss of their customers.
 
-- **Insight 2** :moreover, we observed the churn rate is **30%** in germany alone and approximately **25%** are the female customers. Obviously the churn more among customers either from german or females, in which we may say, if the customer is german women who did complain before has a higher chances to churn than any other customers , and the bank potentially will end up by losing this customer, whereas it may suffers to be keep up their the german market share if they keeps losing those customers to their competitors for a different reasons.
+- **Insight 2** : moreover, we observed the churn rate is **30%** in germany alone and approximately **25%** are the female customers. Obviously the churn more among customers either from german or females, in which we may say, if the customer is german women who did complain before has a higher chances to churn than any other customers , and the bank potentially will end up by losing this customer, whereas it may suffers to be keep up their the german market share if they keeps losing those customers to their competitors for a different reasons.
   
 ## References
 
