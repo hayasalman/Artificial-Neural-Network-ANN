@@ -148,6 +148,12 @@ And the best model is the model which has a high percentage  of (precision and r
 
 [Bank's Customers Churn Prediction Project File](https://github.com/hayasalman/Artificial-Neural-Network-ANN/blob/main/Customers_Churn_ANN_Notebook_.ipynb)
 
+## Suggestions
+
+- For further improvements, we could use hypertuning to determine the best parameters that can give us the ANN model with the lowest number of epochs needed for the training and the best batch size, and learning rate to stabilize our learning process.
+  
+- Since we deal with the binary classification problem, we also can use a different classification algorithm to predict this dataset like: **naive bayes classifier, support vector machine (SVM), deception trees classifier (DT), or random forest classifier**, and compare its performance to the neural networks.
+
 
    
  
