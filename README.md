@@ -76,24 +76,81 @@ since we have a few instances of the churned customers.
 ## Modeling
 
 In order to solve this binary classification problem, we built two different neural networks architectures by user-defined functions:
+
 - The first classifier version :
+  
      - It has Sequential().
      - Three dense layers with using **Relu** as activation function in the hidden layer, and **Sigmoid** for the output layer.
-     - It used **BatchNormalization()** to normalize the layers' inputs by re-centering and re-scaling (we can use Dropout() to avoid overfitting, but for this particular case we will use BatchNormalization() as it works better with the data we have).
+     - It used **BatchNormalization()** to normalize the layers' inputs by re-centering and re-scaling (we can use Dropout() to avoid overfitting, but for this particular case we will use 
+       BatchNormalization() as it works better with the data we have).
      - It used callbacks in keras to help us in a proper training of the model.
      - It used callbacks **ReduceLROnPlateau** to reduce the learning rate when the validation loss has stopped improving.
      - t will return a history plot of Accuracy and Loss during the training epochs.
      - For this model version the batch size that will be used here is **Mini Batch Gradient Descent**.
      - **ROC-AUC Curve** will be used to select the optimal threshold.
-  - The second classifier version:
+       
+- The second classifier version:
+  
    It's the same as the previous classifier with slight differences:
      - The activation function for the hidden layers that will be used with this architecture is **Tanh**.
      - The callback in keras that will be used here is **Early Stopping** which will interrupt the training process when the validation loss is no longer improving after exactly 15 epochs.
+ 
+ ### *However, the number of the epochs, and the optimizer is different for each model we will train.*
+
+ **This a screenshot of the model acurracy during training**
+ 
+![accr_train](https://github.com/hayasalman/Artificial-Neural-Network-ANN/assets/71796909/3466e605-5d63-465d-95b2-07010186ee81)
+
+**This a screenshot of the model loss during training**
+
+![loss_train](https://github.com/hayasalman/Artificial-Neural-Network-ANN/assets/71796909/5ef2ef18-1c01-4217-a776-601d1a4f9cf1)
+
+**This a screenshot of the ROC-AUC Curve**
+
+![roc_](https://github.com/hayasalman/Artificial-Neural-Network-ANN/assets/71796909/64416f12-1686-4e52-9b74-4f24c65ae2d1)
 
 ## Performance Evaluation & Draw Conclusions
 
-       
-  ### *However, the number of the epochs, and the optimizer is different for each model we will train.*
+In terms of determining which of the models have the best performance results and will be used as a final solution.
+And as it's classification task we will be using these following metrics that embedded within sklearn package or we can use user-defined function to compute the results: 
+
+1. **Classification report** : accuray, precision, recall, F-score.
+   - **Sensitivity** is the metric that evaluates a model's ability to predict true positives of each available category.
+   - **Specificity** is the metric that evaluates a model's ability to predict true negatives of each available category.
+
+And the best model is the model which has a high percentage  of (precision and recall) for both categories.
+
+2. **Confuestion matrix**
+    - The false positive and false negative rates to be minimized as possible.
+
+**Conclusion : after comparison between these multiple models performance results**
+
+- The first classifier version with **Adadelta optimizer and 2800 epochs** has the best performance, and it's our best solution so far. Of course, it took more epochs to use during training the model, and it was slow to learn as we observed, but it did a satisfactory job compared to all the other models.
+  
+- Otherwise , the other models were either biased toward the upper-hand class, unstable during the training process, or have poor performance.
+  
+- Also, we can go further and try to tune these model hyperparameters that will lead us to identify the best learning rate and batch size that will help to get out the local optima.
+
+  **This a screenshot of the performance results of the final solution - The first classifier version with Adadelta optimizer and 2800 epochs**
+
+  
+  ![class_rept](https://github.com/hayasalman/Artificial-Neural-Network-ANN/assets/71796909/c74ef280-a7c4-46c9-933f-e017797e7b8a)
+
+##  Business Insights & Recommendations 
+
+- **Insight 1** : we found that the chances of the churn are higher among those customers who complained before than those who didn't.Therefore, the bank must pay more attention
+   toward those customers as they are the most likely to churn, and the fact the bank has this information, in which a complaint is a vital factor to retain the customers or not , it's advisable 
+   to develop a strategic plan to minimize the loss of their customers.
+
+- **Insight 2** :moreover, we observed the churn rate is **30%** in germany alone and approximately **25%** are the female customers. Obviously the churn more among customers either from german or females, in which we may say, if the customer is german women who did complain before has a higher chances to churn than any other customers , and the bank potentially will end up by losing this customer, whereas it may suffers to be keep up their the german market share if they keeps losing those customers to their competitors for a different reasons.
+  
+## References
+
+[Bank's Customers Churn Prediction Project File](https://github.com/hayasalman/Artificial-Neural-Network-ANN/blob/main/Customers_Churn_ANN_Notebook_.ipynb)
+
+
+   
+ 
 
 
     
