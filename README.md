@@ -150,9 +150,9 @@ And the best model is the model which has a high percentage  of (precision and r
 
 ## Suggestions
 
-- For further improvements, we could use hypertuning to determine the best parameters that can give us the ANN model with the lowest number of epochs needed to be training and the best batch size, and learning rate to stabilize our learning process.
+- For further improvements, we could use hypertuning to determine the best parameters that can give us the ANN model with the lowest number of epochs needed to be train and the best batch size, and learning rate to stabilize our learning process.
   
-- Since we deal with a binary classification problem, we can use a different classification algorithms to predict this dataset like: **naive bayes classifier, support vector machine (SVM), decision trees classifier (DT), or random forest classifier**, and compare its performance to the neural network model.
+- Since we deal with a binary classification problem, we can use a different classification algorithms to predict outcomes like: **naive bayes classifier, support vector machine (SVM), decision trees classifier (DT), or random forest classifier**, and compare its performance to the neural network model.
 
 
    
