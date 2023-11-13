@@ -34,7 +34,7 @@
 -  Data source stored as CSV file and can be accessed through this link : [Dataset](https://github.com/hayasalman/Artificial-Neural-Network-ANN/blob/main/Customer_Churn_Records.csv)
 
 ## Coding
--  Integrated Development Environment (IDE) : Python Google Colab Notebooks
+-  Python Integrated Development Environment (IDE) : Google Colab Notebooks
 
    **Packeges used**
    
