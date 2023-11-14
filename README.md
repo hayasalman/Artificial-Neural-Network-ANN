@@ -56,7 +56,7 @@
      2. handling the missing/null values by using **SimpleImputer**.
 
 - Performed exploratory data analysis (EDA) : univariate analysis, and bivariate analysis that will help us to describe and summarize the dataset characteristics, identify associations between 
-  the variables, reveal insights , or detect the if there are any abnormalities in this dataset , and recognize any kind of patterns within the dataset that will help us to identify which 
+  the variables, discover insights , or detect the if there are any abnormalities in this dataset , and recognize any kind of patterns within the dataset that will help us to identify which 
   features are important predictors that uniquely distinguish between customers behavior, in which is crucial to the prediction power of neural networks.
 
 - Preprocessing data before modeling by : define the predictors and the target, encoding categorical variables by creating dummy variables, and finally split our dataset into train-test datasets
