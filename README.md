@@ -44,7 +44,7 @@
    and to evaluate the performance of the models.
   * **tensorflow** : used for deep learning models.
 
-## Approches & Methodologies
+## Approaches & Methodologies
     
 -  Performed a quick overview about the dataset like the dataset shape , data types, and detected any missing values. Therefore, if there were any problems associated
    within the dataset.
