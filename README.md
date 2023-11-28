@@ -58,13 +58,15 @@ We need to set up our local environment to programming using python , here :
 
    ```pip install seaborn```
 
-  ```pip install statsmodels```
+  ```pip install tensorflow```
+  
+  ```pip install scikit-learn```
 
   **OR**
 
   Install multiple packages at the same time. For example, the command below will install all three packages simultaneously.
 
-  ```conda install pandas numpy matplotlib seaborn tensorflow```
+  ```conda install pandas numpy matplotlib seaborn tensorflow scikit-learn```
 
 - Install Jupyter Notebooks.
 
