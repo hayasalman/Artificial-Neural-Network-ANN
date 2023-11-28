@@ -33,6 +33,43 @@
 - In total, this dataset has 10,000 observations and 17 features, except it has some missing/nulls that need to be handled before doing any kind of analysis/modeling.
 -  Data source stored as CSV file and can be accessed through this link : [Dataset](https://github.com/hayasalman/Artificial-Neural-Network-ANN/blob/main/Customer_Churn_Records.csv)
 
+
+## Installation
+
+We need to set up our local environment to programming using python , here :
+
+- Install and navigate through the Anaconda [Anaconda Installer](https://www.anaconda.com/download/) .
+
+- Setup and manage the environments.
+
+  ```conda create -n env_name```
+
+   To access this environment through the command line : ```conda activate env_name```
+
+   To check for the Python packages : ```conda list```
+
+- Download Python packages in Anaconda Terminal (we can use pip or conda interchangeably).
+
+  ```pip install pandas```
+
+   ```pip install numpy```
+
+   ```pip install matplotlib```
+
+   ```pip install seaborn```
+
+  ```pip install statsmodels```
+
+  **OR**
+
+  Install multiple packages at the same time. For example, the command below will install all three packages simultaneously.
+
+  ```conda install pandas numpy matplotlib seaborn tensorflow```
+
+- Install Jupyter Notebooks.
+
+  ```conda install jupyter notebook```
+
 ## Coding
 
 -  Python Integrated Development Environment (IDE) : Google Colab Notebooks.
@@ -147,7 +184,7 @@ And the best model is the model which has a high percentage  of (precision and r
   
 ## References
 
-[Bank's Customers Churn Prediction Project File](https://github.com/hayasalman/Artificial-Neural-Network-ANN/blob/main/Customers_Churn_ANN_Notebook_.ipynb)
+[Bank's Customers Churn Prediction IPYNB File](https://github.com/hayasalman/Artificial-Neural-Network-ANN/blob/main/Customers_Churn_ANN_Notebook_.ipynb)
 
 ## Suggestions
 
