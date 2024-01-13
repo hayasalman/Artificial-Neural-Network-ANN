@@ -50,14 +50,6 @@ We need to set up our local environment to programming using python , here :
   * **tensorflow** : used for deep learning models.
 
 
-## About The Dataset
-
-- In total, this dataset has 10,000 observations and 17 features, except it has some missing/nulls that need to be handled before doing any kind of analysis/modeling.
--  Data source stored as CSV file and can be accessed through this link : [Dataset](https://github.com/hayasalman/Artificial-Neural-Network-ANN/blob/main/Customer_Churn_Records.csv)
-
-   
- 
-
 
     
 
