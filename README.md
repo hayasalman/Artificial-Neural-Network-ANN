@@ -195,6 +195,10 @@ And the best model is the model which has a high percentage  of (precision and r
 - Since we deal with a binary classification problem, we can use a different classification algorithms to predict outcomes like: **naive bayes classifier, support vector machine (SVM), decision trees classifier (DT), or random forest classifier**, and compare its performance to the neural network model.
 
 
+- For Further Findings About This Dataset:
+
+[Retrospective Observational Study And Causal Inference For The Bank's Customers' Churn](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/blob/main/Churn%20customers%20study%20findings%20and%20conclusions.md)
+
    
  
 
